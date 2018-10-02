@@ -21,12 +21,23 @@
     <header class="ph4">
       
         <img class="header__logo" src="./img/bf_logo.svg" alt="Banana Foundation Logo">
-        <i class="fas fa-bars fa-lg"></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars fa-lg"></i>
+          </a>
+        <div class="nav" id="nav">
+          <a href="#home" class="active">Home</a>
+          <a href="#fund">What we fund</a>
+          <a href="#mission">Our mission</a>
+          <a href=".communities">Communities</a>
+          <a href=".technologies">Technologies</a>
+          
+        </div>
+        
       
     </header>
     <!-- Add your site or application content here -->
     <main>
-      <section class="hero-image">
+      <section class="hero-image" id="home">
         <div class="sizer">
           <h1>
             <span>
@@ -40,7 +51,7 @@
         </div>
       </section>
       <div class="sizer">
-        <section class = "fund">
+        <section class = "fund" id="fund">
           <h2>What we fund</h2>
           <div class="grid-container">
             <div class="grid-item one">
@@ -61,7 +72,7 @@
             </div>
           </div>
         </section>
-        <section class = "mission">
+        <section class = "mission" id="mission">
           <h2>Our Mission</h2>
           <div class="grid-container">
             <div class="grid-item one">
@@ -76,12 +87,12 @@
           </div>
 
         </section>
-        <section class = "communities">
+        <section class = "communities" id="communities">
           <h2>Communites</h2>
             
 
         </section>
-        <section class = "technologies">
+        <section class = "technologies" id="technologies">
           <h2>Technologies</h2>
             
 
