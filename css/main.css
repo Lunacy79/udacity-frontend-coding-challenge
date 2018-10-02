@@ -14,6 +14,7 @@ body {
   height: 100%;
 }
 
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -54,18 +55,15 @@ video {
   height: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 120px;
 }
 
-main {
-  flex: 1;
-  overflow: auto;
-}
 
 /* The hero image */
 .hero-image {
   margin: 0 0;
   background-image: url("../img/hero-beach.jpg");
-  height: 480px;
+  height: 387px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -101,15 +99,120 @@ footer {
   Add your CSS here 
    ========================================================================== */
 
-section {
-  height: 300px;
+h1, h2, h3, p, button, captions {
+    font-family: Roboto, open-sans;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+h3, a {
+    font-size: 24px;
+}
+
+a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+caption {
+    font-size: 18px;
+}
+
+main {
+  flex: 1;
   overflow: auto;
-  border-bottom: 2px solid;
-  background: lightpink;
+}
+
+.sizer {
+    padding: 0 100px;
+}
+
+section {
+  
+  overflow: auto;
+  background: #fff;
+  padding: 40px 0 60px 0;
+}
+
+.hero-image {
+  height: 387px;
+  padding: 82px 0 0 0;
+  border-bottom: none !important;
+}
+
+.hero-image h1 span {
+    background-color: #fff;
+}
+
+.fund, .mission, .communities, .technologies {
+    border-bottom: 2px solid;
+}
+
+.fund {
+    height: 330px;
+}
+
+.fund .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+}
+
+.fund .grid-item {
+    height: 178px;
+    margin-top: 40px;
+}
+
+.fund .grid-item p {
+    font-weight: 700;
+    padding: 90px 0 10px 20px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.btn_long {
+    padding: 6px 0 6px 20px;
+    background-color: #000;
+}
+
+.fund .one {
+    background-color: #f2c94c;
+}
+
+.fund .two {
+    background-color: #83afed;
+}
+
+.mission .grid-container {
+    display: grid;
+    grid-template-columns: 500px 400px;
+    grid-column-gap: 80px;
 }
 
 
 
+.mission img {
+    width: 400px;
+    padding-bottom: 80px;
+}
 
 
 
